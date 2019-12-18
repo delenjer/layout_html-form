@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-      <form class="form">
+      <form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
         <fieldset class="form-box">
           <legend>Personal information</legend>
           <label for="surname" class="form-box__item">
@@ -40,10 +40,12 @@
           <legend>Registration</legend>
           <label for="email" class="form-box__item">
             E-mail:
-            <input id="email" type="email"
+            <input id="email"
+                   type="email"
                    autocomplete="on"
                    placeholder="email@example.com"
-                   name="email" required>
+                   name="email"
+                   required>
           </label>
           <label for="password" class="form-box__item">
             Password:
@@ -92,7 +94,12 @@
           <legend>Additional info</legend>
           <label for="text" class="form-box__item">
            Comments:
-            <textarea id="text" name="comments" rows="2" cols="23" autocomplete="on" required></textarea>
+            <textarea id="text"
+                      name="comments"
+                      rows="2" cols="23"
+                      autocomplete="on"
+                      required>
+            </textarea>
           </label>
           <label for="recommend" class="form-box__item">
             Would you recommend us?
